@@ -122,7 +122,6 @@ void samplerApp::onFrameRender()
 	glBindVertexArray(0);
 }
 
-
 void samplerApp::onGuiRender()
 {
 

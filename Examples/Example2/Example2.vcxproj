@@ -19,11 +19,11 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Example1\test.cpp" />
+    <ClCompile Include="test.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
-    <ProjectGuid>{18F3AEBF-4F4D-42B9-9B8A-11E2956A6CE9}</ProjectGuid>
+    <ProjectGuid>{A737CA69-4DCA-4426-8CA4-775CF7C9E97A}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>$safeprojectname$</RootNamespace>
     <WindowsTargetPlatformVersion>10.0.15063.0</WindowsTargetPlatformVersion>
@@ -75,10 +75,10 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <OutDir>$(ProjectDir)\..\bin\$(Configuration)\</OutDir>
+    <OutDir>$(SolutionDir)\bin\$(Configuration)\</OutDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
-    <OutDir>$(ProjectDir)\..\bin\$(Configuration)\</OutDir>
+    <OutDir>$(SolutionDir)\bin\$(Configuration)\</OutDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <OutDir>$(SolutionDir)\lib\$(Configuration)\</OutDir>
@@ -95,11 +95,11 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>_DEBUG;_LIB;_USRDLL;DENOISING_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>$(ProjectDir)\..\smallFramework\src;$(ProjectDir)\..\smallFramework\include;$(ProjectDir)\..\Externals\GLM;$(ProjectDir)\..\Externals\glew\include;$(ProjectDir)\..\Externals\GLFW\include;$(ProjectDir)\..\Externals\assimp\include;$(ProjectDir)\..\Externals\FFMpeg\Include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)\smallFramework\src;$(SolutionDir)\smallFramework\include;$(SolutionDir)\Externals\GLM;$(SolutionDir)\Externals\glew\include;$(SolutionDir)\Externals\GLFW\include;$(SolutionDir)\Externals\assimp\include;$(SolutionDir)\Externals\FFMpeg\Include</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
-      <AdditionalLibraryDirectories>$(ProjectDir)\..\Externals\\GLFW\lib\$(PlatformName)\$(Configuration);$(ProjectDir)\..\Externals\\Assimp\lib\$(PlatformName)\;$(ProjectDir)\..\Externals\\FFMpeg\lib\$(PlatformName);$(ProjectDir)\..\Externals\\glew\lib\Release\$(PlatformName)\;$(ProjectDir)\..\lib\$(Configuration)\</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(SolutionDir)\Externals\\GLFW\lib\$(PlatformName)\$(Configuration);$(SolutionDir)\Externals\\Assimp\lib\$(PlatformName)\;$(SolutionDir)\Externals\\FFMpeg\lib\$(PlatformName);$(SolutionDir)\Externals\\glew\lib\Release\$(PlatformName)\;$(SolutionDir)\lib\$(Configuration)\</AdditionalLibraryDirectories>
       <AdditionalDependencies>smallFramework.lib;glew32.lib;OpenGL32.lib;glfw3.lib;assimp.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;avcodec.lib;avutil.lib;avformat.lib;swscale.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <Lib>
@@ -149,13 +149,13 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <PreprocessorDefinitions>NDEBUG;_LIB;_USRDLL;DENOISING_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>$(ProjectDir)\..\smallFramework\src;$(ProjectDir)\..\smallFramework\include;$(ProjectDir)\..\Externals\GLM;$(ProjectDir)\..\Externals\glew\include;$(ProjectDir)\..\Externals\GLFW\include;$(ProjectDir)\..\Externals\assimp\include;$(ProjectDir)\..\Externals\FFMpeg\Include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)\smallFramework\src;$(SolutionDir)\smallFramework\include;$(SolutionDir)\Externals\GLM;$(SolutionDir)\Externals\glew\include;$(SolutionDir)\Externals\GLFW\include;$(SolutionDir)\Externals\assimp\include;$(SolutionDir)\Externals\FFMpeg\Include</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
-      <AdditionalLibraryDirectories>$(ProjectDir)\..\Externals\\GLFW\lib\$(PlatformName)\$(Configuration);$(ProjectDir)\..\Externals\\Assimp\lib\$(PlatformName)\;$(ProjectDir)\..\Externals\\FFMpeg\lib\$(PlatformName);$(ProjectDir)\..\Externals\\glew\lib\Release\$(PlatformName)\;$(ProjectDir)\..\lib\$(Configuration)\</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(SolutionDir)\Externals\\GLFW\lib\$(PlatformName)\$(Configuration);$(SolutionDir)\Externals\\Assimp\lib\$(PlatformName)\;$(SolutionDir)\Externals\\FFMpeg\lib\$(PlatformName);$(SolutionDir)\Externals\\glew\lib\Release\$(PlatformName)\;$(SolutionDir)\lib\$(Configuration)\</AdditionalLibraryDirectories>
       <AdditionalDependencies>smallFramework.lib;glew32.lib;OpenGL32.lib;glfw3.lib;assimp.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;avcodec.lib;avutil.lib;avformat.lib;swscale.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <OutputFile>$(SolutionDir)\lib\$(Configuration)\$(TargetName)$(TargetExt)</OutputFile>
     </Link>

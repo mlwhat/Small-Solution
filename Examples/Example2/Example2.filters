@@ -62,9 +62,6 @@
     <ClInclude Include="include\sf_common.h">
       <Filter>Basic</Filter>
     </ClInclude>
-    <ClInclude Include="src\Graphics\glslprogram.h">
-      <Filter>Graphics</Filter>
-    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\stb\stb_impls.cpp">
@@ -84,8 +81,5 @@
       <Filter>ImGui</Filter>
     </ClCompile>
     <ClCompile Include="src\test.cpp" />
-    <ClCompile Include="src\Graphics\glslprogram.cpp">
-      <Filter>Graphics</Filter>
-    </ClCompile>
   </ItemGroup>
 </Project>
