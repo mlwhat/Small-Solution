@@ -20,6 +20,18 @@
     <Filter Include="ImGui">
       <UniqueIdentifier>{becd80cd-3882-43f6-a6e4-702e08acf59b}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Utils">
+      <UniqueIdentifier>{bc72ed25-252f-44b9-ba90-a682a4fc8d19}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utils\VideoCapture">
+      <UniqueIdentifier>{432f5a85-cf6e-411d-b750-87f55aae5eb8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utils\Basic">
+      <UniqueIdentifier>{49a992b5-8444-4bc4-b253-3e69894b64aa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="smallImage">
+      <UniqueIdentifier>{8ffd4cdc-a4c4-49fb-9a08-07c58775c36f}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <Text Include="ReadMe.txt" />
@@ -65,6 +77,66 @@
     <ClInclude Include="src\Graphics\glslprogram.h">
       <Filter>Graphics</Filter>
     </ClInclude>
+    <ClInclude Include="src\Utils\AABB.h">
+      <Filter>Utils\Basic</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Utils\BinaryFileStream.h">
+      <Filter>Utils\Basic</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Utils\CpuTimer.h">
+      <Filter>Utils\Basic</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Utils\Formats.h">
+      <Filter>Utils\Basic</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Utils\FrameRate.h">
+      <Filter>Utils\Basic</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Utils\FrameWork.h">
+      <Filter>Utils\Basic</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Utils\Logger.h">
+      <Filter>Utils\Basic</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Utils\MonitorInfo.h">
+      <Filter>Utils\Basic</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Utils\OSSimple.h">
+      <Filter>Utils\Basic</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Utils\VideoDecoder.h">
+      <Filter>Utils\VideoCapture</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Utils\VideoEncoder.h">
+      <Filter>Utils\VideoCapture</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Utils\VideoEncoderUI.h">
+      <Filter>Utils\VideoCapture</Filter>
+    </ClInclude>
+    <ClInclude Include="src\smallImage\bmpreader.h">
+      <Filter>smallImage</Filter>
+    </ClInclude>
+    <ClInclude Include="src\smallImage\epswriter.hpp">
+      <Filter>smallImage</Filter>
+    </ClInclude>
+    <ClInclude Include="src\smallImage\RgbUtil.h">
+      <Filter>smallImage</Filter>
+    </ClInclude>
+    <ClInclude Include="src\smallImage\simple_svg_1.0.0.hpp">
+      <Filter>smallImage</Filter>
+    </ClInclude>
+    <ClInclude Include="src\smallImage\tgaio.h">
+      <Filter>smallImage</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Graphics\camera.h">
+      <Filter>Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Graphics\viewer.h">
+      <Filter>Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Graphics\simpleTimer.h">
+      <Filter>Utils\Basic</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\stb\stb_impls.cpp">
@@ -85,6 +157,45 @@
     </ClCompile>
     <ClCompile Include="src\test.cpp" />
     <ClCompile Include="src\Graphics\glslprogram.cpp">
+      <Filter>Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Utils\Formats.cpp">
+      <Filter>Utils\Basic</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Utils\Logger.cpp">
+      <Filter>Utils\Basic</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Utils\MonitorInfo.cpp">
+      <Filter>Utils\Basic</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Utils\OSSimple.cpp">
+      <Filter>Utils\Basic</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Utils\VideoDecoder.cpp">
+      <Filter>Utils\VideoCapture</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Utils\VideoEncoder.cpp">
+      <Filter>Utils\VideoCapture</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Utils\VideoEncoderUI.cpp">
+      <Filter>Utils\VideoCapture</Filter>
+    </ClCompile>
+    <ClCompile Include="src\smallImage\bmpreader.cpp">
+      <Filter>smallImage</Filter>
+    </ClCompile>
+    <ClCompile Include="src\smallImage\epswriter.cpp">
+      <Filter>smallImage</Filter>
+    </ClCompile>
+    <ClCompile Include="src\smallImage\RgbUtil.cpp">
+      <Filter>smallImage</Filter>
+    </ClCompile>
+    <ClCompile Include="src\smallImage\tgaio.cpp">
+      <Filter>smallImage</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Graphics\camera.cpp">
+      <Filter>Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Graphics\viewer.cpp">
       <Filter>Graphics</Filter>
     </ClCompile>
   </ItemGroup>

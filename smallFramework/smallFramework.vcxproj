@@ -162,11 +162,19 @@
   <ItemGroup>
     <ClInclude Include="include\sf.h" />
     <ClInclude Include="include\sf_common.h" />
+    <ClInclude Include="src\Graphics\camera.h" />
     <ClInclude Include="src\Graphics\glslprogram.h" />
+    <ClInclude Include="src\Graphics\simpleTimer.h" />
+    <ClInclude Include="src\Graphics\viewer.h" />
     <ClInclude Include="src\imgui\imconfig.h" />
     <ClInclude Include="src\imgui\imgui.h" />
     <ClInclude Include="src\imgui\imgui_impl_glfw_gl3.h" />
     <ClInclude Include="src\imgui\imgui_internal.h" />
+    <ClInclude Include="src\smallImage\bmpreader.h" />
+    <ClInclude Include="src\smallImage\epswriter.hpp" />
+    <ClInclude Include="src\smallImage\RgbUtil.h" />
+    <ClInclude Include="src\smallImage\simple_svg_1.0.0.hpp" />
+    <ClInclude Include="src\smallImage\tgaio.h" />
     <ClInclude Include="src\stb\stb.h" />
     <ClInclude Include="src\stb\stb_image.h" />
     <ClInclude Include="src\stb\stb_image_resize.h" />
@@ -174,16 +182,41 @@
     <ClInclude Include="src\stb\stb_rect_pack.h" />
     <ClInclude Include="src\stb\stb_textedit.h" />
     <ClInclude Include="src\stb\stb_truetype.h" />
+    <ClInclude Include="src\Utils\AABB.h" />
+    <ClInclude Include="src\Utils\BinaryFileStream.h" />
+    <ClInclude Include="src\Utils\CpuTimer.h" />
+    <ClInclude Include="src\Utils\Formats.h" />
+    <ClInclude Include="src\Utils\FrameRate.h" />
+    <ClInclude Include="src\Utils\FrameWork.h" />
+    <ClInclude Include="src\Utils\Logger.h" />
+    <ClInclude Include="src\Utils\MonitorInfo.h" />
+    <ClInclude Include="src\Utils\OSSimple.h" />
+    <ClInclude Include="src\Utils\VideoDecoder.h" />
+    <ClInclude Include="src\Utils\VideoEncoder.h" />
+    <ClInclude Include="src\Utils\VideoEncoderUI.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="src\Graphics\camera.cpp" />
     <ClCompile Include="src\Graphics\glslprogram.cpp" />
+    <ClCompile Include="src\Graphics\viewer.cpp" />
     <ClCompile Include="src\imgui\imgui.cpp" />
     <ClCompile Include="src\imgui\imgui_demo.cpp" />
     <ClCompile Include="src\imgui\imgui_draw.cpp" />
     <ClCompile Include="src\imgui\imgui_impl_glfw_gl3.cpp" />
     <ClCompile Include="src\smallFramework.cpp" />
+    <ClCompile Include="src\smallImage\bmpreader.cpp" />
+    <ClCompile Include="src\smallImage\epswriter.cpp" />
+    <ClCompile Include="src\smallImage\RgbUtil.cpp" />
+    <ClCompile Include="src\smallImage\tgaio.cpp" />
     <ClCompile Include="src\stb\stb_impls.cpp" />
     <ClCompile Include="src\test.cpp" />
+    <ClCompile Include="src\Utils\Formats.cpp" />
+    <ClCompile Include="src\Utils\Logger.cpp" />
+    <ClCompile Include="src\Utils\MonitorInfo.cpp" />
+    <ClCompile Include="src\Utils\OSSimple.cpp" />
+    <ClCompile Include="src\Utils\VideoDecoder.cpp" />
+    <ClCompile Include="src\Utils\VideoEncoder.cpp" />
+    <ClCompile Include="src\Utils\VideoEncoderUI.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -1,5 +1,12 @@
 #pragma once
 
+#ifdef _DEBUG
+#define _LOG_ENABLED 1
+#else
+#define _LOG_ENABLED 0 // Set this to 1 to enable log messages in release builds
+#endif 
+
+
 #include <GL/glew.h>
 #include <glfw3.h>
 #include <glm/glm.hpp>
@@ -52,12 +59,14 @@ inline short abss(short a) { if (a < 0) return -a; else return a; };
 inline void swapi(int & a, int & b) { int t = a; a = b; b = t; };
 inline int floori(float a) { return int(floor(a)); };
 inline int ceili(float a) { return int(ceil(a)); };
+
 inline float clampf(float x, float min, float max)
 {
 	if (x < min) x = min;
 	if (x > max) x = max;
 	return x;
 }
+
 inline int clampi(int x, int min, int max)
 {
 	if (x < min) x = min;

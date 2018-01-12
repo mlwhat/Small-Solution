@@ -1,6 +1,6 @@
 /*
 	Created by malei@outlook.com in 2018/1/9
-	Revised code from my old oneFramework project.
+	Revised code from my old smallFrameWork project.
 	Aimed to a simple framework project 
 	External Projects:
 		glm
