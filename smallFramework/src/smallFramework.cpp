@@ -225,6 +225,7 @@ namespace smallFramework
 		}
 		ImGui_ImplGlfwGL3_Shutdown();
 		onShutdown();
+		return 1;
 	}
 
 	uint32_t smallApp::getWidth()

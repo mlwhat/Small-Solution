@@ -32,6 +32,15 @@
     <Filter Include="smallImage">
       <UniqueIdentifier>{8ffd4cdc-a4c4-49fb-9a08-07c58775c36f}</UniqueIdentifier>
     </Filter>
+    <Filter Include="smallImage\ImageIO">
+      <UniqueIdentifier>{d27e7157-bb1a-473f-8877-db7a414361bf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="smallImage\ImageBox">
+      <UniqueIdentifier>{78a0ab19-7824-4916-8d16-c5e51274b7fe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="smallImage\ImageOGL">
+      <UniqueIdentifier>{ca4a3cb2-e0a0-472a-b38e-fa0879292559}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <Text Include="ReadMe.txt" />
@@ -113,19 +122,7 @@
     <ClInclude Include="src\Utils\VideoEncoderUI.h">
       <Filter>Utils\VideoCapture</Filter>
     </ClInclude>
-    <ClInclude Include="src\smallImage\bmpreader.h">
-      <Filter>smallImage</Filter>
-    </ClInclude>
-    <ClInclude Include="src\smallImage\epswriter.hpp">
-      <Filter>smallImage</Filter>
-    </ClInclude>
     <ClInclude Include="src\smallImage\RgbUtil.h">
-      <Filter>smallImage</Filter>
-    </ClInclude>
-    <ClInclude Include="src\smallImage\simple_svg_1.0.0.hpp">
-      <Filter>smallImage</Filter>
-    </ClInclude>
-    <ClInclude Include="src\smallImage\tgaio.h">
       <Filter>smallImage</Filter>
     </ClInclude>
     <ClInclude Include="src\Graphics\camera.h">
@@ -136,6 +133,18 @@
     </ClInclude>
     <ClInclude Include="src\Graphics\simpleTimer.h">
       <Filter>Utils\Basic</Filter>
+    </ClInclude>
+    <ClInclude Include="src\smallImage\tgaio.h">
+      <Filter>smallImage\ImageIO</Filter>
+    </ClInclude>
+    <ClInclude Include="src\smallImage\simple_svg_1.0.0.hpp">
+      <Filter>smallImage\ImageIO</Filter>
+    </ClInclude>
+    <ClInclude Include="src\smallImage\epswriter.hpp">
+      <Filter>smallImage\ImageIO</Filter>
+    </ClInclude>
+    <ClInclude Include="src\smallImage\bmpreader.h">
+      <Filter>smallImage\ImageIO</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -180,16 +189,7 @@
     <ClCompile Include="src\Utils\VideoEncoderUI.cpp">
       <Filter>Utils\VideoCapture</Filter>
     </ClCompile>
-    <ClCompile Include="src\smallImage\bmpreader.cpp">
-      <Filter>smallImage</Filter>
-    </ClCompile>
-    <ClCompile Include="src\smallImage\epswriter.cpp">
-      <Filter>smallImage</Filter>
-    </ClCompile>
     <ClCompile Include="src\smallImage\RgbUtil.cpp">
-      <Filter>smallImage</Filter>
-    </ClCompile>
-    <ClCompile Include="src\smallImage\tgaio.cpp">
       <Filter>smallImage</Filter>
     </ClCompile>
     <ClCompile Include="src\Graphics\camera.cpp">
@@ -197,6 +197,15 @@
     </ClCompile>
     <ClCompile Include="src\Graphics\viewer.cpp">
       <Filter>Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="src\smallImage\tgaio.cpp">
+      <Filter>smallImage\ImageIO</Filter>
+    </ClCompile>
+    <ClCompile Include="src\smallImage\epswriter.cpp">
+      <Filter>smallImage\ImageIO</Filter>
+    </ClCompile>
+    <ClCompile Include="src\smallImage\bmpreader.cpp">
+      <Filter>smallImage\ImageIO</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
